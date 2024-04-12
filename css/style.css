@@ -67,7 +67,7 @@ header nav ul li a {
     display: inline-block;
     padding: 20px;
     border-radius: 20px;
-    font-weight: 700;
+    font-weight: 800;
     font-family: "Poppins", sans-serif;
     color: #0D0E0E;
     text-decoration: none;
@@ -540,9 +540,9 @@ header nav ul li a {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: auto;
     padding: 20px;
 }
 
@@ -602,6 +602,26 @@ header nav ul li a {
     text-decoration: none;
     font-weight: 400;
 }
+
+.profe{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.profe img{
+    border-radius: 10px;
+}
+
+.profe-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
 
 /**OBJETIVO**/
 
