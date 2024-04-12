@@ -544,7 +544,7 @@ header nav ul li a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap:10px;
-    padding:0px 300px 10px 300px;
+    padding:0px 300px 30px 300px;
 }
 
 .conocer-grid div p {
@@ -623,6 +623,7 @@ header nav ul li a {
 .profe-flex{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .profe-flex h4{
@@ -636,5 +637,9 @@ header nav ul li a {
     align-content: center;
 }
 
+.profe-ketbell img{
+    width: 50px;
+    
+}
 /**OBJETIVO**/
 
