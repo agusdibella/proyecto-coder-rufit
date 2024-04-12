@@ -535,33 +535,53 @@ header nav ul li a {
 
 /**CONOCENOS**/
 
-.conocer {
+.conocer-grid {
     background-image: url(../images/FOTOFONDO-03.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     display: grid;
-    grid-template-columns: repeat(2 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    padding: 20px;
+    gap:10px;
+    padding:0px 300px 10px 300px;
 }
 
-.conocer div {
-    text-align: center;
-    width: 40%;
+.conocer-grid div p {
+    color: #FFFDEF;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-align:left ;
+    margin: 20px 0px 20px 0px;
+}
+.conocer-grid .conocer-cabezal p{
+    font-size: 20px;
+    font-weight: 400;
 }
 
-.conocer h2 {
-    font-size: 35px;
+.conocer-grid div p img {
+    width: 18px;
+}
+
+.conocer-grid div p span {
     font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    background-color: #185454;
-    color: #fffffe;
-    padding: 20px;
-    text-align: center;
+    color: #dfbd00;
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 400;
 }
 
-.conocer h3 {
+.conocer-cabezal{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.conocer-titulo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
     font-family: "Poppins", sans-serif;
     color: #00a8a8;
     margin-top: 10px;
@@ -571,45 +591,31 @@ header nav ul li a {
     align-content: center;
 }
 
-.conocer h4 {
-    color: #dfbd00;
-    text-align: center;
+.conocer-pie{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.conocer-grid .conocer-pie p{
     font-size: 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.conocer div p {
-    color: #FFFDEF;
-    font-size: 17px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    margin-top: 10px;
-    text-align: justify;
-    margin-bottom: 20px;
-}
-
-.conocer div p img {
-    width: 18px;
-}
-
-.conocer div p span {
-    font-family: "Poppins", sans-serif;
-    color: #dfbd00;
-    margin-top: 10px;
-    font-size: 20px;
-    text-decoration: none;
     font-weight: 400;
-}
+} 
 
 .profe{
     width: 100%;
     height: auto;
     text-align: center;
-    padding: 50px 0px 50px 0px;
+    padding-bottom: 30px;
+    background-color: #FFFDEF;
 }
 
+.profe h3{
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    padding: 20px 20px 0px 20px;
+    color: #00a8a8;
+}
 .profe img{
     border-radius: 10px;
 }
@@ -619,9 +625,16 @@ header nav ul li a {
     justify-content: space-evenly;
 }
 
-
-
-
+.profe-flex h4{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #185454;
+    margin-top: 5px;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+}
 
 /**OBJETIVO**/
 
