@@ -62,7 +62,7 @@ header nav ul li a {
     text-align: center;
 }
 
-.boton {
+.boton-amarillo {
     background-color: #dfbd00;
     display: inline-block;
     padding: 20px;
@@ -74,16 +74,16 @@ header nav ul li a {
     font-size: 20px;
 }
 
-.boton a {
+.boton-amarillo a {
     text-decoration: none;
     color: #0D0E0E;
 }
 
-.boton a:hover{
+.boton-amarillo a:hover{
     color: #46B4BF;
 }
 
-.somos {
+.somos-rufit {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -102,7 +102,7 @@ header nav ul li a {
     flex-wrap: wrap;
 }
 
-.somos h2 {
+.somos-rufit h2 {
     font-size: 50px;
     padding: 50px 0px 20px 0px;
     font-weight: 900;
@@ -111,7 +111,7 @@ header nav ul li a {
     font-style: normal;
 }
 
-.somos div {
+.somos-rufit div {
     margin: 5px;
     font-size: 20px;
     background-color: #185454bb;
@@ -120,7 +120,7 @@ header nav ul li a {
     border-radius: 10px;
 }
 
-.somos .boton {
+.somos-rufit .boton {
     margin-top: 10px;
 }
 
@@ -219,7 +219,7 @@ header nav ul li a {
         font-size: 33px;
 }
 
-.contacto {
+.contacto-form {
     background-image: url(../images/textura.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -230,7 +230,7 @@ header nav ul li a {
     width: 100%;
 }
 
-.contacto h2 {
+.contacto-form h2 {
     padding-top: 10px;
     font-size: 35px;
     margin-bottom: 20px;
@@ -238,11 +238,11 @@ header nav ul li a {
     font-weight: 900;
 }
 
-.contacto div {
+.contacto-form div {
     padding: 5px;
 }
 
-.contacto form {
+.contacto-form form {
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -254,12 +254,12 @@ header nav ul li a {
     color: #185454;
 }
 
-.contacto form label {
+.contacto-form form label {
     padding-bottom: 20px;
     align-content: flex-start;
 }
 
-.contacto form div input {
+.contacto-form form div input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -267,7 +267,7 @@ header nav ul li a {
     border-radius: 5px;
 }
 
-.contacto form div textarea {
+.contacto-form form div textarea {
     width: 100%;
     height: 150px;
     padding: 12px 20px;
