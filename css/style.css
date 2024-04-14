@@ -8,37 +8,37 @@
 
 /**   INDEX    **/
 
-.navbar{
+.navbar {
     font-family: "Poppins", sans-serif;
 }
 
-.navbar-brand img{
+.navbar-brand img {
     width: 150px;
     height: 150px;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     background-color: #00a8a8;
     border-radius: 5px;
-    border:solid #F1F2F1 1px;
+    border: solid #F1F2F1 1px;
 }
 
 
-.navbar-color{
+.navbar-color {
     background-color: #0e0e0d
 }
 
-.nav-link{
+.nav-link {
     color: #F1F2F1;
     font-size: 20px;
-    
+
 }
 
-.nav-link:hover{
-    color:#dfbd00;
+.nav-link:hover {
+    color: #dfbd00;
 }
 
-.navbar-nav .nav-link.active{
+.navbar-nav .nav-link.active {
     color: #46B4BF;
 }
 
@@ -69,7 +69,7 @@
     color: #0D0E0E;
 }
 
-.boton-amarillo a:hover{
+.boton-amarillo a:hover {
     color: #46B4BF;
 }
 
@@ -205,8 +205,8 @@
     font-size: 30px;
 }
 
-.nosotros-imagenes h3 a:hover{
-        font-size: 33px;
+.nosotros-imagenes h3 a:hover {
+    font-size: 33px;
 }
 
 .contacto-form {
@@ -368,7 +368,7 @@
     display: inline-block;
 }
 
-.sede-flex .boton a:hover{
+.sede-flex .boton a:hover {
     color: #46B4BF;
 }
 
@@ -419,7 +419,7 @@
     margin-top: 20px;
 }
 
-.distancia .boton a:hover{
+.distancia .boton a:hover {
     color: #46B4BF;
 }
 
@@ -454,7 +454,7 @@
     margin-top: 20px;
 }
 
-.mixto .boton a:hover{
+.mixto .boton a:hover {
     color: #00a8a8;
 }
 
@@ -519,7 +519,7 @@
     margin-bottom: 10px;
 }
 
-.venta a:hover{
+.venta a:hover {
     color: #00a8a8
 }
 
@@ -533,8 +533,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    gap:10px;
-    padding:0px 300px 30px 300px;
+    gap: 10px;
+    padding: 0px 300px 30px 300px;
 }
 
 .conocer-grid div p {
@@ -542,10 +542,11 @@
     font-size: 17px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    text-align:left ;
+    text-align: left;
     margin: 20px 0px 20px 0px;
 }
-.conocer-grid .conocer-cabezal p{
+
+.conocer-grid .conocer-cabezal p {
     font-size: 20px;
     font-weight: 400;
 }
@@ -563,12 +564,12 @@
     font-weight: 400;
 }
 
-.conocer-cabezal{
+.conocer-cabezal {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-.conocer-titulo{
+.conocer-titulo {
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
@@ -581,17 +582,17 @@
     align-content: center;
 }
 
-.conocer-pie{
+.conocer-pie {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-.conocer-grid .conocer-pie p{
+.conocer-grid .conocer-pie p {
     font-size: 20px;
     font-weight: 400;
-} 
+}
 
-.profe{
+.profe {
     width: 100%;
     height: auto;
     text-align: center;
@@ -599,24 +600,25 @@
     background-color: #F1F2F1;
 }
 
-.profe h3{
+.profe h3 {
     font-size: 35px;
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     padding: 20px 20px 0px 20px;
     color: #00a8a8;
 }
-.profe img{
+
+.profe img {
     border-radius: 10px;
 }
 
-.profe-flex{
+.profe-flex {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.profe-flex h4{
+.profe-flex h4 {
     text-align: center;
     font-family: "Poppins", sans-serif;
     color: #185454;
@@ -627,23 +629,24 @@
     align-content: center;
 }
 
-.profe-ketbell img{
-    width: 50px;    
+.profe-ketbell img {
+    width: 50px;
 }
-.objt{
+
+.objt {
     background-image: url(../images/textura-objt-01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.objt p{
+.objt p {
     font-size: 20px;
     color: #F1F2F1;
     padding: 0% 5% 0% 5%;
 }
 
- .objt h3{
+.objt h3 {
     text-align: center;
     color: #F1F2F1;
     padding: 0% 5% 0% 5%;
@@ -651,10 +654,10 @@
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 30px;
- }
+}
 
-.cards-objetivos{
-    display:flex;
+.cards-objetivos {
+    display: flex;
     height: auto;
     flex-direction: column;
     align-items: center;
@@ -663,11 +666,11 @@
     margin-right: 20%;
 }
 
-.card-body{
+.card-body {
     background-color: #F1F2F1;
 }
 
-.card-body h4 a{
+.card-body h4 a {
     display: inline-block;
     text-align: center;
     padding: 10px;
@@ -682,30 +685,142 @@
     margin-bottom: 10px;
 }
 
-.card-body h4 a:hover{
+.card-body h4 a:hover {
     color: #00a8a8;
 }
 
-.objt .card-text{
+.objt .card-text {
     color: #0e0e0d;
     font-family: "Roboto", sans-serif;
 }
 
-.objt .card-title{
+.objt .card-title {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 25px;
     color: #46B4BF;
 }
 
-.bi-geo-alt-fill{
-color: #dfbd00;
+.bi-geo-alt-fill {
+    color: #dfbd00;
 }
 
-.bi-calendar3-event-fill{
+.bi-calendar3-event-fill {
     color: #dfbd00;
 }
 
 
-@media screen and (maw-width:)    
+@media screen and (max-width:415px) {
+    body {
+        width: 100%;
+    }
+
+    .somos-rufit div p {
+        font-size: 15px;
+    }
+
+    .boton-amarillo a {
+        font-size: 15px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .nosotros {
+        width: 100%;
+    }
+
+    .nosotros-imagenes div {
+        text-align: center;
+        margin: 5px
+    }
+
+    .nosotros-imagenes div img {
+        width: 100%;
+        height: autos;
+        border-radius: 10px;
+        box-shadow: 0px 0px 36px 0px #0000002f;
+        -webkit-box-shadow: 0px 0px 36px 0px #0000002f;
+        -moz-box-shadow: 0px 0px 36px 0px #0000002f;
+    }
+
+    .contacto-form div label {
+        padding: 2px;
+    }
+
+    .contacto-form h2 {
+        padding-top: 10px;
+        font-size: 30px;
+    }
+
+    .contacto-form form {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:428px) {
+
+    .entrenamiento-tarjetas h3 {
+        font-size: 20px;
+    }
+
+    .nosotros {
+        width: 100%;
+    }
+
+    .nosotros h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .nosotros h3 a {
+        font-size: 20px;
+    }
+
+    .nosotros-imagenes div {
+        text-align: center;
+        margin: 5px
+    }
+
+    .nosotros-imagenes div img {
+        width: 100%;
+        height: autos;
+        border-radius: 10px;
+        box-shadow: 0px 0px 36px 0px #0000002f;
+        -webkit-box-shadow: 0px 0px 36px 0px #0000002f;
+        -moz-box-shadow: 0px 0px 36px 0px #0000002f;
+    }
+}
+
+@media screen and (max-width:1227px) {
+    .conocer-grid {
+        margin: 5px 0px 5px 0px;
+        padding: 0px 100px 30px 100px;
+    }
+
+@media screen and (max-width:760px) {
+
+        .conocer{
+            background-size: cover;
+            background-position: center;
+        }
+        .conocer-grid {
+            display: inline-block;
+        }
+
+        .profe-flex {
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .profe img {
+            margin-top: 15px;
+        }
+    }
+
+    @media screen and (max-width:450px) {
+        .conocer-grid {
+            margin: 5px 0px 5px 0px;
+            padding: 0px 10px 30px 10px;
+        }
+    }
 }
