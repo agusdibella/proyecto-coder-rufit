@@ -178,7 +178,7 @@
 
 .nosotros-imagenes {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -188,8 +188,8 @@
 }
 
 .nosotros-imagenes div img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: autos;
     border-radius: 10px;
     box-shadow: 0px 0px 36px 0px #0000002f;
     -webkit-box-shadow: 0px 0px 36px 0px #0000002f;
@@ -331,7 +331,7 @@
 }
 
 .sede {
-    height: 550px;
+    height: auto;
     margin: 10px;
     text-align: center;
     border-radius: 25px;
@@ -596,7 +596,7 @@
     height: auto;
     text-align: center;
     padding-bottom: 30px;
-    background-color: #FFFDEF;
+    background-color: #F1F2F1;
 }
 
 .profe h3{
@@ -630,7 +630,28 @@
 .profe-ketbell img{
     width: 50px;    
 }
-/**OBJETIVO**/
+.objt{
+    background-image: url(../images/textura-objt-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.objt p{
+    font-size: 20px;
+    color: #F1F2F1;
+    padding: 0% 5% 0% 5%;
+}
+
+ .objt h3{
+    text-align: center;
+    color: #F1F2F1;
+    padding: 0% 5% 0% 5%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+ }
 
 .cards-objetivos{
     display:flex;
@@ -640,6 +661,10 @@
     justify-content: space-around;
     margin-left: 20%;
     margin-right: 20%;
+}
+
+.card-body{
+    background-color: #F1F2F1;
 }
 
 .card-body h4 a{
@@ -652,10 +677,35 @@
     color: #0D0E0E;
     margin-top: 10px;
     font-size: 20px;
+    font-weight: 500;
     text-decoration: none;
     margin-bottom: 10px;
 }
 
 .card-body h4 a:hover{
     color: #00a8a8;
+}
+
+.objt .card-text{
+    color: #0e0e0d;
+    font-family: "Roboto", sans-serif;
+}
+
+.objt .card-title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #46B4BF;
+}
+
+.bi-geo-alt-fill{
+color: #dfbd00;
+}
+
+.bi-calendar3-event-fill{
+    color: #dfbd00;
+}
+
+
+@media screen and (maw-width:)    
 }
