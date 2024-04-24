@@ -1,0 +1,152 @@
+/**ENTRENAMIENTO**/
+main {
+    .entreno {
+        font-family: "Poppins", sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+
+        h3 {
+            font-size: 35px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 900;
+            padding: 20px 20px 0px 20px;
+            color: #185454;
+            background-color: #fffffe;
+
+            img {
+                width: 25px;
+                transform: rotate(20deg);
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            padding: 20px;
+            text-align: left;
+            background-color: #fffffe;
+        }
+    }
+
+    .sede-flex {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .sede {
+            height: auto;
+            margin: 10px;
+            text-align: center;
+            border-radius: 25px;
+            background-color: #fffffe;
+            border: solid 3px #46B4BF;
+            margin-bottom: 50px;
+
+            h3 {
+                font-size: 30px;
+                font-family: "Poppins", sans-serif;
+                font-weight: 900;
+                padding: 10px;
+                color: #185454;
+                text-align: center;
+            }
+
+            div {
+                iframe {
+                    width: 450px;
+                    height: 300px;
+                    padding: 10px;
+                    border-radius: 20px;
+                }
+
+                .horario-parrafo {
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: #46B4BF;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+
+                h4 {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .distancia {
+        padding: 80px 20px 80px 20px;
+        background-color: #0D0E0E;
+
+        h2 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 900;
+            font-size: 30px;
+            padding-bottom: 20px;
+            color: #fffffe;
+
+            img {
+                width: 25px;
+                transform: rotate(10deg);
+            }
+        }
+
+        p {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #46B4BF;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            margin: 10px 0px 10px 0px;
+            color: #fffffe;
+        }
+
+        h4 {
+            margin-top: 20px;
+        }
+
+    }
+
+    .mixto {
+        padding: 80px 20px 80px 20px;
+        background-color: #46B4BF;
+        color: #46B4BF;
+
+        h2 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 900;
+            font-size: 30px;
+            padding-bottom: 20px;
+            color: #185454;
+
+            img {
+                width: 25px;
+                transform: rotate(-15deg);
+            }
+        }
+
+        p {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #0D0E0E;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+    }
+}
+
+/**FIN ENTRENAMIENTO**/

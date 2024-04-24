@@ -1,0 +1,131 @@
+/**CONOCENOS**/
+
+main {
+    section {
+        .conocer-grid {
+            background-image: url(../images/FOTOFONDO-03.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 10px;
+            padding: 0px 300px 30px 300px;
+
+            .conocer-cabezal {
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+                p {
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+            }
+
+            .conocer-titulo {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                text-align: center;
+                font-family: "Poppins", sans-serif;
+                color: #00a8a8;
+                margin-top: 10px;
+                font-size: 25px;
+                text-decoration: none;
+                text-align: center;
+                align-content: center;
+            }
+
+            div {
+                color: #FFFDEF;
+                font-size: 17px;
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+                text-align: left;
+                margin: 20px 0px 20px 0px;
+
+                p {
+                    color: #FFFDEF;
+                    font-size: 17px;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 300;
+                    text-align: left;
+                    margin: 20px 0px 20px 0px;
+
+                    img {
+                        width: 18px;
+                    }
+
+                    span {
+                        font-family: "Poppins", sans-serif;
+                        color: #FFFD00;
+                        margin-top: 10px;
+                        font-size: 20px;
+                        text-decoration: none;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .conocer-pie {
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+                p {
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .profe {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding-bottom: 30px;
+        background-color: #F1F2F1;
+
+        h3 {
+            font-size: 35px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 900;
+            padding: 20px 20px 0px 20px;
+            color: #00a8a8;
+        }
+
+        .profe-flex {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            div {
+                a {
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+
+                h4 {
+                    text-align: center;
+                    font-family: "Poppins", sans-serif;
+                    color: #185454;
+                    margin-top: 5px;
+                    font-size: 25px;
+                    text-decoration: none;
+                    text-align: center;
+                    align-content: center;
+                }
+            }
+
+            .profe-ketbell {
+                img {
+                    width: 50px;
+
+                }
+            }
+        }
+    }
+}
+
+/**FIN CONOCENOS**/
