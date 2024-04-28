@@ -1,10 +1,10 @@
 .redes {
-    background-color: #0D0E0E;
+    background-color: nth($paleta-colores, 3);
     text-align: center;
     padding: 20px 0px 20px 0px;
 
     h2 {
-        color: #46B4BF;
+        color: nth($paleta-colores, 2);
         font-size: 30px;
         font-family: "Poppins", sans-serif;
         font-weight: 900;
@@ -16,9 +16,33 @@
         justify-content: space-evenly;
 
         a {
-            img {
-                width: 50px;
-                height: 50px;
+            .bi-facebook {
+                font-size: 50px;
+                color: nth($paleta-colores, 5);
+                transition: 1s;
+
+                &:hover {
+                    color: nth($paleta-colores, 1);
+                }
+            }
+
+            .bi-instagram {
+                font-size: 50px;
+                color: nth($paleta-colores, 5);
+                transition: 1s;
+
+                &:hover {
+                    color: nth($paleta-colores, 1);
+                }
+            }
+
+            .bi-youtube {
+                font-size: 50px;
+                color: nth($paleta-colores, 5);
+                transition: 1s;
+                &:hover {
+                    color: nth($paleta-colores, 1);
+                }
             }
         }
     }

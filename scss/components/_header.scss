@@ -8,27 +8,27 @@
 }
 
 .navbar-toggler-icon {
-    background-color: #00a8a8;
+    background-color: nth($paleta-colores,2);
     border-radius: 5px;
-    border: solid #F1F2F1 1px;
+    border: solidnth($paleta-colores,5) 1px;
 }
 
 .navbar-color {
-    background-color: #0e0e0d
+    background-color: nth($paleta-colores,3)
 }
 
 .navbar-nav {
     .nav-link {
-        color: #F1F2F1;
+        color: nth($paleta-colores,5);
         font-size: 20px;
         transition: 800ms;
         
         &:hover {
-            color: #FFFD00;
+            color: nth($paleta-colores,1);
         }
     }
 }
 
 .navbar-nav .nav-link.active {
-    color: #46B4BF;
+    color:nth($paleta-colores,2);
 }

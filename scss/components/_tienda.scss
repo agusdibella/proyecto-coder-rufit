@@ -1,6 +1,9 @@
 /**TIENDA**/
 main {
     .tienda {
+        .titulo{
+            @extend %titulo-top;
+        }
         .tienda-grid {
             width: 100%;
             display: grid;
@@ -32,7 +35,7 @@ main {
                         font-size: 20px;
                         font-family: "Roboto", sans-serif;
                         font-weight: 300;
-                        color: #FFFDEF;
+                        color: nth($paleta-colores,5);
                     }
 
                     h4 {
@@ -40,10 +43,10 @@ main {
                             display: inline-block;
                             text-align: center;
                             padding: 10px;
-                            background-color: #FFFD00;
+                            background-color: nth($paleta-colores,1);
                             border-radius: 10px;
                             font-family: "Poppins", sans-serif;
-                            color: #0D0E0E;
+                            color:nth($paleta-colores,4);
                             margin-top: 10px;
                             font-size: 15px;
                             text-decoration: none;
@@ -51,7 +54,7 @@ main {
                             font-weight: 700;
 
                             &:hover {
-                                color: #00a8a8;
+                                color: nth($paleta-colores,2);
                             }
                         }
                     }

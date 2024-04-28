@@ -1,0 +1,43 @@
+$paleta-colores: #FFFD00,
+    /*1*/
+    #46B4BF,
+    /*2*/
+    #0D0E0E,
+    /*3*/
+    #185454,
+    /*4*/
+    #F1F2F1,
+    /*5*/
+    #ededed;
+/*6*/
+
+%align-cards {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+%titulo-top{
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    background-color: nth($paleta-colores, 1);
+    color: nth($paleta-colores, 3);
+    padding: 20px;
+    text-align: center;
+}
+
+$boton-gd:(
+    bg-boton:nth($paleta-colores,1),
+    display-boton: inline-block,
+    pad-b:20px,
+    borde: 20px,
+    color-b:nth($paleta-colores,3),
+);
+
+@mixin subtitulo($sub-fsize, $sub-fweigh){
+    font-size: $sub-fsize;
+    font-weight: $sub-fweigh;
+}

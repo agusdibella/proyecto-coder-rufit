@@ -1,35 +1,45 @@
+/*6*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+main .entrenamiento .entrenamiento-tarjetas, main .sede-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo {
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  background-color: #FFFD00;
+  color: #0D0E0E;
+  padding: 20px;
+  text-align: center;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
-.titulo {
-  font-size: 35px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  background-color: #FFFD00;
-  color: black;
-  padding: 20px;
-  text-align: center;
-}
-
 .boton-amarillo {
-  background-color: #FFFD00;
+  /**background-color: nth($paleta-colores, 1);
   display: inline-block;
   padding: 20px;
   border-radius: 20px;
   font-weight: 800;
   font-family: "Poppins", sans-serif;
-  color: #0D0E0E;
-  text-decoration: none;
-  font-size: 20px;
+  color: nth($paleta-colores, 3);
+  font-size: 20px;**/
 }
 .boton-amarillo a {
   text-decoration: none;
   color: #0D0E0E;
   transition: 800ms;
+  font-size: 20px;
+  font-weight: 800;
 }
 .boton-amarillo a:hover {
   color: #46B4BF;
@@ -64,10 +74,6 @@
   main .entrenamiento .entrenamiento-tarjetas div {
     width: 95%;
     margin: 10px;
-  }
-  main .entrenamiento .entrenamiento-tarjetas div p {
-    color: #F1F2F1;
-    font-weight: 500;
   }
 }
 @media screen and (max-width: 900px) {
@@ -281,14 +287,14 @@ main section .conocer-grid .conocer-titulo {
   margin: 0px;
 }
 main section .conocer-grid .conocer-titulo h3 {
-  color: #00a8a8;
-  font-size: 25px;
+  color: #46B4BF;
+  font-size: 40px;
   text-decoration: none;
   text-align: center;
   align-content: center;
 }
 main section .conocer-grid div {
-  color: #FFFDEF;
+  color: #F1F2F1;
   font-size: 17px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -296,7 +302,7 @@ main section .conocer-grid div {
   margin: 10px 0px 10px 0px;
 }
 main section .conocer-grid div p {
-  color: #FFFDEF;
+  color: #F1F2F1;
   font-size: 17px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -304,7 +310,8 @@ main section .conocer-grid div p {
   margin: 20px 0px 20px 0px;
 }
 main section .conocer-grid div p img {
-  width: 18px;
+  width: 25px;
+  padding-right: 7px;
 }
 main section .conocer-grid div p span {
   font-family: "Poppins", sans-serif;
@@ -334,7 +341,7 @@ main .profe h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   padding: 20px 20px 0px 20px;
-  color: #00a8a8;
+  color: #46B4BF;
 }
 main .profe .profe-flex {
   display: flex;
@@ -344,7 +351,7 @@ main .profe .profe-flex {
 main .profe .profe-flex div a img {
   border-radius: 10px;
 }
-main .profe .profe-flex div h4 {
+main .profe .profe-flex h4 {
   text-align: center;
   font-family: "Poppins", sans-serif;
   color: #185454;
@@ -354,24 +361,30 @@ main .profe .profe-flex div h4 {
   text-align: center;
   align-content: center;
 }
-main .profe .profe-flex .profe-ketbell img {
+main .profe .boton-amarillo {
+  background-color: #FFFD00;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 20px;
+  color: #0D0E0E;
+  font-family: "Poppins", sans-serif;
+}
+main .profe-ketbell img {
   width: 50px;
+  transition: 1s;
+}
+main .profe-ketbell img:hover {
+  transform: rotate(-30deg);
 }
 
 /**FIN CONOCENOS**/
 /**ENTRENAMIENTO**/
-main .entreno {
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-  font-weight: 900;
-}
 main .entreno h3 {
   font-size: 35px;
-  font-family: "Poppins", sans-serif;
   font-weight: 900;
-  padding: 20px 20px 0px 20px;
+  padding: 10px 20px 10px 20px;
   color: #185454;
-  background-color: #fffffe;
+  font-family: "Poppins", sans-serif;
 }
 main .entreno h3 img {
   width: 25px;
@@ -384,16 +397,9 @@ main .entreno p {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
   text-align: left;
-  background-color: #fffffe;
-}
-main .sede-flex {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  background-color: #F1F2F1;
 }
 main .sede-flex .sede {
   height: auto;
@@ -428,19 +434,26 @@ main .sede-flex .sede div .horario-parrafo p {
   color: #46B4BF;
   text-align: center;
 }
-main .sede-flex .sede div h4 {
+main .sede-flex .sede div .boton-amarillo {
+  background-color: #FFFD00;
   display: inline-block;
+  padding: 20px;
+  border-radius: 20px;
+  color: #0D0E0E;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
 }
 main .distancia {
-  padding: 80px 20px 80px 20px;
+  padding: 60px 20px 60px 20px;
   background-color: #0D0E0E;
 }
 main .distancia h2 {
-  font-family: "Poppins", sans-serif;
+  font-size: 35px;
   font-weight: 900;
-  font-size: 30px;
-  padding-bottom: 20px;
-  color: #fffffe;
+  padding: 10px;
+  color: #F1F2F1;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
 }
 main .distancia h2 img {
   width: 25px;
@@ -448,6 +461,15 @@ main .distancia h2 img {
 }
 main .distancia h2 img:hover {
   transform: rotate(10deg);
+}
+main .distancia .boton-amarillo {
+  background-color: #FFFD00;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 20px;
+  color: #0D0E0E;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
 }
 main p {
   font-family: "Roboto", sans-serif;
@@ -461,23 +483,22 @@ main h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   margin: 10px 0px 10px 0px;
-  color: #fffffe;
+  color: #F1F2F1;
 }
 main h4 {
   margin-top: 20px;
 }
 
 .mixto {
-  padding: 80px 20px 80px 20px;
+  padding: 60px 20px 60px 20px;
   background-color: #46B4BF;
-  color: #46B4BF;
 }
 .mixto h2 {
-  font-family: "Poppins", sans-serif;
+  font-size: 35px;
   font-weight: 900;
-  font-size: 30px;
-  padding-bottom: 20px;
   color: #185454;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
 }
 .mixto h2 img {
   width: 25px;
@@ -493,8 +514,14 @@ main h4 {
   margin-bottom: 5px;
   color: #0D0E0E;
 }
-.mixto h3 {
-  margin-top: 20px;
+.mixto .boton-amarillo {
+  background-color: #FFFD00;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 20px;
+  color: #0D0E0E;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
 }
 
 /**FIN ENTRENAMIENTO**/
@@ -517,7 +544,6 @@ main .somos-rufit {
 }
 main .somos-rufit h2 {
   font-size: 70px;
-  /**padding: 50px 0px 20px 0px;**/
   font-weight: 900;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
@@ -537,26 +563,26 @@ main .somos-rufit div p {
   font-style: normal;
   color: #F1F2F1;
 }
-
-.entrenamiento {
-  padding: 40px 20px 40px 20px;
-  background-color: #0e0e0d;
+main .somos-rufit .boton-amarillo {
+  background-color: #FFFD00;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 20px;
+  color: #0D0E0E;
 }
-.entrenamiento h2 {
-  padding: 10px;
-  color: #F1F2F1;
+main .entrenamiento {
+  background-color: #0D0E0E;
+  padding-bottom: 50px;
+}
+main .entrenamiento h2 {
   font-size: 35px;
   font-weight: 900;
+  padding: 20px;
+  color: #46B4BF;
+  margin-bottom: 30px;
   font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
 }
-.entrenamiento .entrenamiento-tarjetas {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-.entrenamiento .entrenamiento-tarjetas div {
+main .entrenamiento .entrenamiento-tarjetas div {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   display: inline-block;
@@ -567,36 +593,47 @@ main .somos-rufit div p {
   border-radius: 10px;
   width: 25%;
 }
-.entrenamiento .entrenamiento-tarjetas div p {
+main .entrenamiento .entrenamiento-tarjetas div h3 {
+  color: #F1F2F1;
+  font-size: 30px;
+  font-weight: 800;
+}
+main .entrenamiento .entrenamiento-tarjetas div p {
   color: #F1F2F1;
   font-weight: 500;
 }
-
-.nosotros {
+main .entrenamiento .entrenamiento-tarjetas div .boton-amarillo {
+  background-color: #FFFD00;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 20px;
+  color: #0D0E0E;
+  font-family: "Poppins", sans-serif;
+}
+main .nosotros {
   background-color: #F1F2F1;
   padding: 40px 20px 40px 20px;
   border-top: #F1F2F1 10px solid;
   border-bottom: #F1F2F1 10px solid;
 }
-.nosotros h2 {
-  padding: 10px;
+main .nosotros h2 {
   font-size: 35px;
+  font-weight: 900;
+  padding: 20px;
+  color: #46B4BF;
   margin-bottom: 30px;
   font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  color: #46B4BF;
 }
-.nosotros .nosotros-imagenes {
+main .nosotros .nosotros-imagenes {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.nosotros .nosotros-imagenes div {
+main .nosotros .nosotros-imagenes div {
   text-align: center;
   margin: 0px 90px 0px 90px;
 }
-.nosotros .nosotros-imagenes div img {
+main .nosotros .nosotros-imagenes div img {
   width: 300px;
   height: autos;
   border-radius: 10px;
@@ -604,7 +641,7 @@ main .somos-rufit div p {
   -webkit-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.1843137255);
   -moz-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.1843137255);
 }
-.nosotros .nosotros-imagenes h3 a {
+main .nosotros .nosotros-imagenes h3 a {
   padding-top: 20px;
   font-family: "Poppins", sans-serif;
   color: #46B4BF;
@@ -613,23 +650,21 @@ main .somos-rufit div p {
   font-size: 30px;
   transition: font-size, 80ms;
 }
-.nosotros .nosotros-imagenes h3 a:hover {
+main .nosotros .nosotros-imagenes h3 a:hover {
   font-size: 33px;
 }
-
-.marquesina {
+main .marquesina {
   background-color: #FFFD00;
   text-align: center;
 }
-.marquesina a {
+main .marquesina a {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  color: #0d0e0e;
+  color: #0D0E0E;
   font-weight: 800;
   font-size: 20px;
 }
-
-.contacto-form {
+main .contacto-form {
   background-color: #46B4BF;
   background-position: center;
   background-repeat: no-repeat;
@@ -639,14 +674,14 @@ main .somos-rufit div p {
   height: auto;
   width: 100%;
 }
-.contacto-form h2 {
+main .contacto-form h2 {
   padding-top: 10px;
   font-size: 35px;
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
 }
-.contacto-form form {
+main .contacto-form form {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -657,29 +692,29 @@ main .somos-rufit div p {
   flex-wrap: wrap;
   color: #185454;
 }
-.contacto-form form div {
+main .contacto-form form div {
   padding: 5px;
 }
-.contacto-form form div div {
+main .contacto-form form div div {
   padding-bottom: 10px;
 }
-.contacto-form form div div label {
+main .contacto-form form div div label {
   padding-bottom: 5px;
   align-content: flex-start;
 }
-.contacto-form form div div input {
+main .contacto-form form div div input {
   width: 100%;
   padding: 12px 20px;
   border: 2px solid #ccc;
   border-radius: 5px;
 }
-.contacto-form form div div textarea {
+main .contacto-form form div div textarea {
   width: 100%;
   height: 150px;
   padding: 12px 20px;
   border: 2px solid #ccc;
   border-radius: 4px;
-  background-color: #f8f8f8;
+  background-color: #FFFD00, #46B4BF, #0D0E0E, #185454, #F1F2F1, #ededed, 5;
   border-radius: 5px;
 }
 
@@ -724,7 +759,7 @@ main .objt .cards-objetivos .card-body .card-title {
   color: #46B4BF;
 }
 main .objt .cards-objetivos .card-body .card-text {
-  color: #0e0e0d;
+  color: #0D0E0E;
   font-family: "Roboto", sans-serif;
 }
 main .objt .cards-objetivos .card-body .card-text .bi-geo-alt-fill {
@@ -749,7 +784,7 @@ main .objt .cards-objetivos .card-body h4 a {
   transition: 800ms;
 }
 main .objt .cards-objetivos .card-body h4 a:hover {
-  color: #00a8a8;
+  color: #46B4BF;
 }
 
 /**TIENDA**/
@@ -784,7 +819,7 @@ main .tienda .tienda-grid .grid-item .venta h3 {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  color: #FFFDEF;
+  color: #F1F2F1;
 }
 main .tienda .tienda-grid .grid-item .venta h4 a {
   display: inline-block;
@@ -793,7 +828,7 @@ main .tienda .tienda-grid .grid-item .venta h4 a {
   background-color: #FFFD00;
   border-radius: 10px;
   font-family: "Poppins", sans-serif;
-  color: #0D0E0E;
+  color: #185454;
   margin-top: 10px;
   font-size: 15px;
   text-decoration: none;
@@ -801,7 +836,7 @@ main .tienda .tienda-grid .grid-item .venta h4 a {
   font-weight: 700;
 }
 main .tienda .tienda-grid .grid-item .venta h4 a:hover {
-  color: #00a8a8;
+  color: #46B4BF;
 }
 main .tienda .tienda-grid .img-1 {
   grid-column: span 2;
@@ -827,9 +862,29 @@ main .tienda .tienda-grid .img-2 {
   display: flex;
   justify-content: space-evenly;
 }
-.redes .redes-flex a img {
-  width: 50px;
-  height: 50px;
+.redes .redes-flex a .bi-facebook {
+  font-size: 50px;
+  color: #F1F2F1;
+  transition: 1s;
+}
+.redes .redes-flex a .bi-facebook:hover {
+  color: #FFFD00;
+}
+.redes .redes-flex a .bi-instagram {
+  font-size: 50px;
+  color: #F1F2F1;
+  transition: 1s;
+}
+.redes .redes-flex a .bi-instagram:hover {
+  color: #FFFD00;
+}
+.redes .redes-flex a .bi-youtube {
+  font-size: 50px;
+  color: #F1F2F1;
+  transition: 1s;
+}
+.redes .redes-flex a .bi-youtube:hover {
+  color: #FFFD00;
 }
 
 .navbar {
@@ -842,13 +897,13 @@ main .tienda .tienda-grid .img-2 {
 }
 
 .navbar-toggler-icon {
-  background-color: #00a8a8;
+  background-color: #46B4BF;
   border-radius: 5px;
-  border: solid #F1F2F1 1px;
+  border: solidnth(#FFFD00, #46B4BF, #0D0E0E, #185454, #F1F2F1, #ededed, 5) 1px;
 }
 
 .navbar-color {
-  background-color: #0e0e0d;
+  background-color: #0D0E0E;
 }
 
 .navbar-nav .nav-link {

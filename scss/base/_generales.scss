@@ -6,34 +6,23 @@
     box-sizing: border-box;
 }
 
-.titulo {
-    font-size: 35px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    background-color: #FFFD00;
-    color: black;
-    padding: 20px;
-    text-align: center;
-}
-
 .boton-amarillo {
-    background-color: #FFFD00;
+    /**background-color: nth($paleta-colores, 1);
     display: inline-block;
     padding: 20px;
     border-radius: 20px;
     font-weight: 800;
     font-family: "Poppins", sans-serif;
-    color: #0D0E0E;
-    text-decoration: none;
-    font-size: 20px;
-
+    color: nth($paleta-colores, 3);
+    font-size: 20px;**/
     a {
         text-decoration: none;
-        color: #0D0E0E;
+        color: nth($paleta-colores, 3);
         transition: 800ms;
-
+        font-size: 20px;
+        font-weight: 800;
         &:hover {
-            color: #46B4BF;
+            color: nth($paleta-colores, 2);
         }
     }
 }

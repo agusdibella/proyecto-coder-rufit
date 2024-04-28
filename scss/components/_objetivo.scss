@@ -1,5 +1,9 @@
 /**OBJETIVO**/
 main {
+    .titulo {
+        @extend %titulo-top;
+    }
+
     .objt {
         background-image: url(../images/textura-objt-01.jpg);
         background-repeat: no-repeat;
@@ -8,13 +12,13 @@ main {
 
         p {
             font-size: 20px;
-            color: #F1F2F1;
+            color: nth($paleta-colores, 5);
             padding: 0% 5% 0% 5%;
         }
 
         h3 {
             text-align: center;
-            color: #F1F2F1;
+            color: nth($paleta-colores, 5);
             padding: 0% 5% 0% 5%;
             text-align: center;
             font-family: "Poppins", sans-serif;
@@ -32,25 +36,25 @@ main {
             margin-right: 20%;
 
             .card-body {
-                background-color: #F1F2F1;
+                background-color: nth($paleta-colores, 5);
 
                 .card-title {
                     font-family: "Poppins", sans-serif;
                     font-weight: 700;
                     font-size: 25px;
-                    color: #46B4BF;
+                    color: nth($paleta-colores, 2);
                 }
 
                 .card-text {
-                    color: #0e0e0d;
+                    color: nth($paleta-colores, 3);
                     font-family: "Roboto", sans-serif;
 
                     .bi-geo-alt-fill {
-                        color: #FFFD00;
+                        color: nth($paleta-colores, 1);
                     }
 
                     .bi-calendar3-event-fill {
-                        color: #FFFD00;
+                        color: nth($paleta-colores, 1);
                     }
                 }
 
@@ -59,10 +63,10 @@ main {
                         display: inline-block;
                         text-align: center;
                         padding: 10px;
-                        background-color: #FFFD00;
+                        background-color: nth($paleta-colores, 1);
                         border-radius: 10px;
                         font-family: "Poppins", sans-serif;
-                        color: #0D0E0E;
+                        color: nth($paleta-colores, 3);
                         margin-top: 10px;
                         font-size: 20px;
                         font-weight: 700;
@@ -71,15 +75,11 @@ main {
                         transition: 800ms;
 
                         &:hover {
-                            color: #00a8a8;
+                            color: nth($paleta-colores, 2);
                         }
                     }
                 }
             }
-
-
-
         }
-
     }
 }

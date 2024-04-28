@@ -1,6 +1,10 @@
 /**CONOCENOS**/
 main {
     section {
+        .titulo {
+            @extend %titulo-top;
+        }
+
         .conocer-grid {
             background-image: url(../images/FOTOFONDO-03.jpg);
             background-repeat: no-repeat;
@@ -31,8 +35,8 @@ main {
                 margin: 0px;
 
                 h3 {
-                    color: #00a8a8;
-                    font-size: 25px;
+                    color: nth($paleta-colores, 2);
+                    font-size: 40px;
                     text-decoration: none;
                     text-align: center;
                     align-content: center;
@@ -41,7 +45,7 @@ main {
             }
 
             div {
-                color: #FFFDEF;
+                color: nth($paleta-colores, 5);
                 font-size: 17px;
                 font-family: "Roboto", sans-serif;
                 font-weight: 300;
@@ -49,7 +53,7 @@ main {
                 margin: 10px 0px 10px 0px;
 
                 p {
-                    color: #FFFDEF;
+                    color: nth($paleta-colores, 5);
                     font-size: 17px;
                     font-family: "Roboto", sans-serif;
                     font-weight: 300;
@@ -57,12 +61,13 @@ main {
                     margin: 20px 0px 20px 0px;
 
                     img {
-                        width: 18px;
+                        width: 25px;
+                        padding-right: 7px;
                     }
 
                     span {
                         font-family: "Poppins", sans-serif;
-                        color: #FFFD00;
+                        color: nth($paleta-colores, 1);
                         margin-top: 10px;
                         font-size: 20px;
                         text-decoration: none;
@@ -88,14 +93,14 @@ main {
         height: auto;
         text-align: center;
         padding-bottom: 30px;
-        background-color: #F1F2F1;
+        background-color: nth($paleta-colores, 5);
 
         h3 {
             font-size: 35px;
             font-family: "Poppins", sans-serif;
             font-weight: 900;
             padding: 20px 20px 0px 20px;
-            color: #00a8a8;
+            color: nth($paleta-colores, 2);
         }
 
         .profe-flex {
@@ -109,27 +114,43 @@ main {
                         border-radius: 10px;
                     }
                 }
-
-                h4 {
-                    text-align: center;
-                    font-family: "Poppins", sans-serif;
-                    color: #185454;
-                    margin-top: 5px;
-                    font-size: 25px;
-                    text-decoration: none;
-                    text-align: center;
-                    align-content: center;
-                }
             }
 
-            .profe-ketbell {
-                img {
-                    width: 50px;
+            h4 {
+                text-align: center;
+                font-family: "Poppins", sans-serif;
+                color: nth($paleta-colores, 4);
+                margin-top: 5px;
+                font-size: 25px;
+                text-decoration: none;
+                text-align: center;
+                align-content: center;
+            }
+        }
 
-                }
+        .boton-amarillo {
+            background-color: map-get($boton-gd, bg-boton);
+            display: map-get($boton-gd, display-boton);
+            padding: map-get($boton-gd, pad-b);
+            border-radius: map-get($boton-gd, borde);
+            color: map-get($boton-gd, color-b);
+            font-family: "Poppins", sans-serif;
+        }
+
+    }
+
+    .profe-ketbell {
+        img {
+            width: 50px;
+            transition: 1s;
+
+            &:hover {
+                transform: rotate(-30deg);
+
             }
         }
     }
 }
+
 
 /**FIN CONOCENOS**/
