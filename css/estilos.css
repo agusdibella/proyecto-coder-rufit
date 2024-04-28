@@ -29,7 +29,7 @@
 .boton-amarillo a {
   text-decoration: none;
   color: #0D0E0E;
-  transition: color 80ms;
+  transition: 800ms;
 }
 .boton-amarillo a:hover {
   color: #46B4BF;
@@ -48,6 +48,41 @@
     padding: 0px 100px 30px 100px;
   }
 }
+@media screen and (max-width: 1040px) {
+  body main .objt .cards-objetivos {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main .entrenamiento .entrenamiento-tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  main .entrenamiento .entrenamiento-tarjetas div {
+    width: 95%;
+    margin: 10px;
+  }
+  main .entrenamiento .entrenamiento-tarjetas div p {
+    color: #F1F2F1;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 900px) {
+  body main .tienda .tienda-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 900px) {
+  body main .tienda .tienda-grid {
+    width: 100%;
+    display: inline-block;
+  }
+}
 @media screen and (max-width: 760px) {
   body main section .conocer-grid {
     display: inline-block;
@@ -60,23 +95,161 @@
     margin-top: 15px;
   }
   body main .profe .profe-flex div h4 {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    color: #185454;
     margin-top: 5px;
     font-size: 25px;
-    text-decoration: none;
-    text-align: center;
-    align-content: center;
   }
-  body main .profe .profe-flex .profe-ketbell img {
-    width: 50px;
+}
+@media screen and (max-width: 590px) {
+  body main .nosotros {
+    padding: 5px;
+  }
+  body main .nosotros-imagenes div {
+    text-align: center;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 560px) {
+  body main .objt .cards-objetivos {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  body main .objt .cards-objetivos .card-body .card-title {
+    font-size: 20px;
+  }
+  body main .objt .cards-objetivos .card-body .card-text {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 558px) {
   body main section .conocer-grid {
     margin: 5px 0px 5px 0px;
     padding: 5px 15px 30px 15px;
+  }
+}
+@media screen and (max-width: 530px) {
+  body main .nosotros {
+    padding: 5px;
+  }
+  body main .nosotros-imagenes div {
+    text-align: center;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .distancia {
+    width: 100%;
+  }
+  .mixto {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 470px) {
+  body main .entreno .titulo {
+    font-size: 30px;
+  }
+  body main .entreno h3 {
+    font-size: 30px;
+  }
+  body main .sede-flex {
+    align-items: center;
+    margin: 0px;
+  }
+  body main .sede-flex .sede {
+    width: 95%;
+    margin: 0px;
+  }
+  body main .sede-flex .sede h3 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 460px) {
+  body main .entreno .titulo {
+    font-size: 30px;
+  }
+  body main .entreno h3 {
+    font-size: 30px;
+  }
+  body main .sede-flex {
+    align-items: center;
+    margin: 0px;
+  }
+  body main .sede-flex .sede {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+  body main .sede-flex .sede h3 {
+    font-size: 30px;
+  }
+  body main .sede-flex .sede div iframe {
+    text-align: center;
+    width: 98%;
+    height: 250px;
+    border-radius: 20px;
+  }
+  body main .sede-flex .sede .horario-parrafo {
+    margin-bottom: 5px;
+  }
+  body main .sede-flex .sede .horario-parrafo p {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #46B4BF;
+    text-align: center;
+  }
+  body main .sede-flex .sede h4 {
+    display: inline-block;
+  }
+  body .distancia {
+    width: 100%;
+  }
+  body .mixto {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  body main .somos-rufit div {
+    width: 75%;
+  }
+  body main .nosotros {
+    padding: 5px;
+  }
+  body main .nosotros .nosotros-imagenes div {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  body main .tienda .tienda-grid .grid-item .venta {
+    padding-left: 10px;
+  }
+  body main .tienda .tienda-grid .grid-item .venta h3 {
+    font-size: 15px;
+  }
+  body main .tienda .tienda-grid .grid-item .venta h4 {
+    margin-top: 5px;
+  }
+  body main .tienda .tienda-grid .grid-item .venta h4 a {
+    margin-top: 3px;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .distancia {
+    width: 100%;
+  }
+  .mixto {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .distancia {
+    width: 100%;
+  }
+  .mixto {
+    width: 100%;
+  }
+  .profe-flex div a img {
+    width: 300px;
   }
 }
 /**CONOCENOS**/
@@ -327,7 +500,7 @@ main h4 {
 /**FIN ENTRENAMIENTO**/
 /**INDEX**/
 main .somos-rufit {
-  color: #46B4BF;
+  color: #FFFD00;
   width: 100%;
   height: 500px;
   text-align: center;
@@ -343,7 +516,7 @@ main .somos-rufit {
   justify-content: center;
 }
 main .somos-rufit h2 {
-  font-size: 50px;
+  font-size: 70px;
   /**padding: 50px 0px 20px 0px;**/
   font-weight: 900;
   font-family: "Poppins", sans-serif;
@@ -353,7 +526,7 @@ main .somos-rufit h2 {
 main .somos-rufit div {
   margin: 5px;
   font-size: 20px;
-  background-color: rgba(24, 84, 84, 0.7333333333);
+  background-color: rgba(70, 181, 191, 0.6862745098);
   padding: 20px;
   color: #F1F2F1;
   border-radius: 10px;
@@ -573,6 +746,7 @@ main .objt .cards-objetivos .card-body h4 a {
   font-weight: 700;
   text-decoration: none;
   margin-bottom: 10px;
+  transition: 800ms;
 }
 main .objt .cards-objetivos .card-body h4 a:hover {
   color: #00a8a8;
@@ -680,6 +854,7 @@ main .tienda .tienda-grid .img-2 {
 .navbar-nav .nav-link {
   color: #F1F2F1;
   font-size: 20px;
+  transition: 800ms;
 }
 .navbar-nav .nav-link:hover {
   color: #FFFD00;

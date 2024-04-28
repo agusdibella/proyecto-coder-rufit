@@ -2,7 +2,7 @@
   body {
     main {
       section {
-        .conocer-grid{
+        .conocer-grid {
           margin: 5px 0px 5px 0px;
           padding: 0px 100px 30px 100px;
         }
@@ -11,6 +11,69 @@
   }
 }
 
+@media screen and (max-width:1040px) {
+body {
+    main {
+      .objt {
+        .cards-objetivos {
+          margin-left: 5%;
+          margin-right: 5%;
+      }
+    }
+  }
+}
+}
+
+@media screen and (max-width:1000px) {
+  main {
+    .entrenamiento {
+      .entrenamiento-tarjetas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+
+        div {
+          width: 95%;
+          margin: 10px;
+
+          p {
+            color: #F1F2F1;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:900px) {
+  body {
+    main {
+      .tienda {
+        .tienda-grid {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:900px) {
+  body {
+    main {
+      .tienda {
+        .tienda-grid {
+          width: 100%;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width:760px) {
   body {
@@ -21,53 +84,283 @@
         }
       }
 
-        .profe {
-    
-          .profe-flex {
+      .profe {
 
-            text-align: center;
-            flex-direction: column;
+        .profe-flex {
 
-            div {
-              a {
-                img {
-                  margin-top: 15px;
-                }
-              }
+          text-align: center;
+          flex-direction: column;
 
-              h4 {
-                text-align: center;
-                font-family: "Poppins", sans-serif;
-                color: #185454;
-                margin-top: 5px;
-                font-size: 25px;
-                text-decoration: none;
-                text-align: center;
-                align-content: center;
+          div {
+            a {
+              img {
+                margin-top: 15px;
               }
             }
 
-            .profe-ketbell {
-              img {
-                width: 50px;
-
-              }
+            h4 {
+              margin-top: 5px;
+              font-size: 25px;
             }
           }
         }
       }
     }
+  }
+}
+
+@media screen and (max-width:590px) {
+  body {
+    main {
+      .nosotros {
+        padding: 5px;
+      }
+
+      .nosotros-imagenes {
+        div {
+          text-align: center;
+          margin: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:560px) {
+  body {
+      main {
+        .objt {
+          .cards-objetivos {
+            margin-left: 5%;
+            margin-right: 5%;
+            .card-body{
+              .card-title{
+                font-size:20px;              
+              }
+              .card-text{
+                font-size: 18px;
+              }
+            }
+        }
+      }
+    }
+  }
   }
 
 @media screen and (max-width:558px) {
-    body {
-      main {
-        section {
-          .conocer-grid {
-            margin: 5px 0px 5px 0px;
-            padding: 5px 15px 30px 15px;
+  body {
+    main {
+      section {
+        .conocer-grid {
+          margin: 5px 0px 5px 0px;
+          padding: 5px 15px 30px 15px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:530px) {
+  body {
+    main {
+      .nosotros {
+        padding: 5px;
+      }
+
+      .nosotros-imagenes div {
+        text-align: center;
+        margin: 0px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:500px) {
+  .distancia {
+    width: 100%;
+  }
+
+  .mixto {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:470px) {
+  body {
+    main {
+      .entreno {
+        .titulo {
+          font-size: 30px;
+        }
+
+        h3 {
+          font-size: 30px;
+        }
+      }
+
+      .sede-flex {
+        align-items: center;
+        margin: 0px;
+
+        .sede {
+          width: 95%;
+          margin: 0px;
+
+          h3 {
+            font-size: 30px;
           }
         }
       }
     }
   }
+
+}
+
+@media screen and (max-width:460px) {
+  body {
+    main {
+      .entreno {
+        .titulo {
+          font-size: 30px;
+        }
+
+        h3 {
+          font-size: 30px;
+        }
+      }
+
+      .sede-flex {
+        align-items: center;
+        margin: 0px;
+
+        .sede {
+          width: 95%;
+          margin-bottom: 10px;
+
+          h3 {
+            font-size: 30px;
+          }
+
+
+          div {
+            iframe {
+              text-align: center;
+              width: 98%;
+              height: 250px;
+              border-radius: 20px;
+            }
+          }
+
+          .horario-parrafo {
+            margin-bottom: 5px;
+
+            p {
+              font-family: "Poppins", sans-serif;
+              font-size: 20px;
+              font-weight: 500;
+              color: #46B4BF;
+              text-align: center;
+            }
+
+          }
+
+          h4 {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .distancia {
+      width: 100%;
+    }
+
+    .mixto {
+      width: 100%;
+    }
+  }
+}
+
+
+@media screen and (max-width:400px) {
+  body {
+    main {
+      .somos-rufit {
+        div {
+          width: 75%;
+        }
+      }
+
+      .nosotros {
+        padding: 5px;
+
+        .nosotros-imagenes {
+          div {
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+          }
+        }
+      }
+
+      .tienda {
+        .tienda-grid {
+          .grid-item {
+            .venta {
+              padding-left: 10px;
+
+              h3 {
+                font-size: 15px;
+              }
+
+              h4 {
+                margin-top: 5px;
+
+                a {
+                  margin-top: 3px;
+                  font-size: 15px;
+                  margin-bottom: 5px;
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width:430px) {
+  .distancia {
+    width: 100%;
+  }
+
+  .mixto {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .distancia {
+    width: 100%;
+  }
+
+  .mixto {
+    width: 100%;
+  }
+
+  .profe-flex {
+    div {
+      a {
+        img {
+          width: 300px
+        }
+      }
+    }
+  }
+}
