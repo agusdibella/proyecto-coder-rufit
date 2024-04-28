@@ -786,7 +786,7 @@
 }
 
 @media screen and (max-width:1227px) {
-    .conocer-grid {
+    .grid-conocer {
         margin: 5px 0px 5px 0px;
         padding: 0px 100px 30px 100px;
     }
