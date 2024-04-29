@@ -24,16 +24,6 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
   box-sizing: border-box;
 }
 
-.boton-amarillo {
-  /**background-color: nth($paleta-colores, 1);
-  display: inline-block;
-  padding: 20px;
-  border-radius: 20px;
-  font-weight: 800;
-  font-family: "Poppins", sans-serif;
-  color: nth($paleta-colores, 3);
-  font-size: 20px;**/
-}
 .boton-amarillo a {
   text-decoration: none;
   color: #0D0E0E;
