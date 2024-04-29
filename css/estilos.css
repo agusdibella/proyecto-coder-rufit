@@ -282,6 +282,7 @@ main section .conocer-grid .conocer-titulo h3 {
   text-decoration: none;
   text-align: center;
   align-content: center;
+  font-family: "Poppins", sans-serif;
 }
 main section .conocer-grid div {
   color: #F1F2F1;
