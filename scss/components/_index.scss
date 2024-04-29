@@ -56,7 +56,7 @@ main {
         h2 {
             @include subtitulo(35px, 900);
             padding: 20px;
-            color: nth($paleta-colores, 2);
+            color: nth($paleta-colores, 5);
             margin-bottom: 30px;
             font-family: "Poppins", sans-serif;
         }
@@ -101,7 +101,6 @@ main {
     }
 
 
-
     .nosotros {
         background-color: nth($paleta-colores, 5);
         padding: 40px 20px 40px 20px;
@@ -110,8 +109,7 @@ main {
 
         h2 {
             @include subtitulo(35px, 900);
-            padding: 20px;
-            color: nth($paleta-colores, 2);
+           color: nth($paleta-colores, 2);
             margin-bottom: 30px;
             font-family: "Poppins", sans-serif;
         }

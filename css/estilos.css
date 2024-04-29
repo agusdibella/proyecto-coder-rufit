@@ -568,7 +568,7 @@ main .entrenamiento h2 {
   font-size: 35px;
   font-weight: 900;
   padding: 20px;
-  color: #46B4BF;
+  color: #F1F2F1;
   margin-bottom: 30px;
   font-family: "Poppins", sans-serif;
 }
@@ -609,7 +609,6 @@ main .nosotros {
 main .nosotros h2 {
   font-size: 35px;
   font-weight: 900;
-  padding: 20px;
   color: #46B4BF;
   margin-bottom: 30px;
   font-family: "Poppins", sans-serif;
