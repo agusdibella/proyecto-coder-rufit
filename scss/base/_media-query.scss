@@ -12,35 +12,40 @@
 }
 
 @media screen and (max-width:1040px) {
-body {
+  body {
     main {
       .objt {
         .cards-objetivos {
           margin-left: 5%;
           margin-right: 5%;
-      }
-    }
-  }
-}
-}
-
-@media screen and (max-width:1000px) {
-  main {
-    .entrenamiento {
-      .entrenamiento-tarjetas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-
-        div {
-          width: 95%;
-          margin: 10px;
         }
       }
     }
   }
 }
+
+@media screen and (max-width:1000px) {
+  body {
+    main {
+      .entrenamiento {
+        .entrenamiento-tarjetas {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          div {
+            width: 95%;
+            margin: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 
 @media screen and (max-width:900px) {
   body {
@@ -123,24 +128,26 @@ body {
 
 @media screen and (max-width:560px) {
   body {
-      main {
-        .objt {
-          .cards-objetivos {
-            margin-left: 5%;
-            margin-right: 5%;
-            .card-body{
-              .card-title{
-                font-size:20px;              
-              }
-              .card-text{
-                font-size: 18px;
-              }
+    main {
+      .objt {
+        .cards-objetivos {
+          margin-left: 5%;
+          margin-right: 5%;
+
+          .card-body {
+            .card-title {
+              font-size: 20px;
             }
+
+            .card-text {
+              font-size: 18px;
+            }
+          }
         }
       }
     }
   }
-  }
+}
 
 @media screen and (max-width:558px) {
   body {

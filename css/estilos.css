@@ -55,15 +55,16 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
   }
 }
 @media screen and (max-width: 1000px) {
-  main .entrenamiento .entrenamiento-tarjetas {
+  body main .entrenamiento .entrenamiento-tarjetas {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
-  main .entrenamiento .entrenamiento-tarjetas div {
+  body main .entrenamiento .entrenamiento-tarjetas div {
     width: 95%;
-    margin: 10px;
+    margin: 15px;
   }
 }
 @media screen and (max-width: 900px) {
