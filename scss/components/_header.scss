@@ -1,34 +1,37 @@
 .navbar {
     font-family: "Poppins", sans-serif;
-}
-
-.navbar-brand img {
-    width: 150px;
-    height: 150px;
+    .container-fluid {
+        .navbar-brand {
+            img {
+                width: 125px;
+                height: 125px;
+            }
+        }
+    }
 }
 
 .navbar-toggler-icon {
-    background-color: nth($paleta-colores,2);
+    background-color: nth($paleta-colores, 2);
     border-radius: 5px;
-    border: solidnth($paleta-colores,5) 1px;
+    border: solidnth($paleta-colores, 5) 1px;
 }
 
 .navbar-color {
-    background-color: nth($paleta-colores,3)
+    background-color: nth($paleta-colores, 3)
 }
 
 .navbar-nav {
     .nav-link {
-        color: nth($paleta-colores,5);
+        color: nth($paleta-colores, 5);
         font-size: 20px;
         transition: 800ms;
-        
+
         &:hover {
-            color: nth($paleta-colores,1);
+            color: nth($paleta-colores, 1);
         }
     }
 }
 
 .navbar-nav .nav-link.active {
-    color:nth($paleta-colores,2);
+    color: nth($paleta-colores, 2);
 }
