@@ -29,6 +29,7 @@ $paleta-colores: #FFFD00,
     text-align: center;
 }
 
+
 $boton-gd:(
     bg-boton:nth($paleta-colores,1),
     display-boton: inline-block,
@@ -36,6 +37,7 @@ $boton-gd:(
     borde: 20px,
     color-b:nth($paleta-colores,3),
 );
+
 
 @mixin subtitulo($sub-fsize, $sub-fweigh){
     font-size: $sub-fsize;

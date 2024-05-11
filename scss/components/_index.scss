@@ -1,58 +1,67 @@
 /**INDEX**/
 main {
     .somos-rufit {
-        color: nth($paleta-colores, 1);
+        color: nth($paleta-colores, 5);
         width: 100%;
         height: 500px;
         text-align: center;
-        background-image: url(../images/fondo-1.jpg);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-image: url(../images/textura.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        h2 {
-            font-size: 70px;
-            font-weight: 900;
-            font-family: "Poppins", sans-serif;
-            font-weight: 900;
-            font-style: normal;
-        }
-
-        div {
-            margin: 5px;
-            font-size: 20px;
+        .somos-texto {
+            width: 45%;
+            padding: 0px 15px 0px 15px;
             background-color: #46b5bfaf;
-            padding: 20px;
-            color: nth($paleta-colores, 5);
             border-radius: 10px;
-
-            p {
-                font-family: "Roboto", sans-serif;
-                font-weight: 700;
+            margin-left: 5px;
+            h2 {
+                font-size: 70px;
+                font-weight: 900;
+                font-family: "Poppins", sans-serif;
+                font-weight: 900;
                 font-style: normal;
+            }
+            div {
+                margin: 5px;
                 color: nth($paleta-colores, 5);
+                p {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 25px;
+                    color: nth($paleta-colores, 4);
+                }
+            }
+            .boton-amarillo {
+                background-color: map-get($boton-gd, bg-boton);
+                display: map-get($boton-gd, display-boton);
+                padding: map-get($boton-gd, pad-b);
+                border-radius: map-get($boton-gd, borde);
+                color: map-get($boton-gd, color-b);
+
             }
         }
 
-        .boton-amarillo {
-            background-color: map-get($boton-gd, bg-boton);
-            display: map-get($boton-gd, display-boton);
-            padding: map-get($boton-gd, pad-b);
-            border-radius: map-get($boton-gd, borde);
-            color: map-get($boton-gd, color-b);
-
+        .somos-img {
+            width: 50%;
+            img {
+                width: 80%;
+                height: auto;
+            }
         }
     }
 
     .entrenamiento {
-        background-color: nth($paleta-colores,3);
+        background-color: nth($paleta-colores, 3);
         padding-bottom: 50px;
+
         h2 {
             @include subtitulo(35px, 900);
             padding: 20px;
@@ -109,7 +118,7 @@ main {
 
         h2 {
             @include subtitulo(35px, 900);
-           color: nth($paleta-colores, 2);
+            color: nth($paleta-colores, 2);
             margin-bottom: 30px;
             font-family: "Poppins", sans-serif;
         }
@@ -233,4 +242,5 @@ main {
         }
     }
 }
-    /**FIN INDEX**/
+
+/**FIN INDEX**/

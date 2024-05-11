@@ -55,6 +55,20 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
   }
 }
 @media screen and (max-width: 1000px) {
+  body main .somos-rufit {
+    display: inline-block;
+  }
+  body main .somos-rufit .somos-texto {
+    width: 100%;
+    margin-left: 0px;
+    border-radius: 0px;
+  }
+  body main .somos-rufit .somos-img {
+    width: 100%;
+  }
+  body main .somos-rufit .somos-img img {
+    width: 25%;
+  }
   body main .entrenamiento .entrenamiento-tarjetas {
     display: flex;
     flex-direction: column;
@@ -132,7 +146,34 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
     margin: 0px;
   }
 }
+@media screen and (max-width: 510px) {
+  body main .somos-rufit {
+    height: 100%;
+    width: 100%;
+    background-color: #46B4BF;
+  }
+  body main .somos-rufit .somos-texto h2 {
+    font-size: 50px;
+  }
+  body main .somos-rufit .somos-texto div {
+    padding: 20px;
+  }
+  body main .somos-rufit .somos-texto div p {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 500px) {
+  .entrenamiento .entrenamiento-tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .entrenamiento .entrenamiento-tarjetas div {
+    width: 95%;
+    margin: 5px;
+  }
   .distancia {
     width: 100%;
   }
@@ -205,10 +246,36 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
 }
 @media screen and (max-width: 400px) {
   body main .somos-rufit div {
-    width: 75%;
+    width: 100%;
+  }
+  body main .somos-rufit .somos-texto h2 {
+    font-size: 50px;
+  }
+  body main .somos-rufit .somos-texto div {
+    padding: 20px;
+  }
+  body main .entrenamiento h2 {
+    font-size: 30px;
+    font-weight: 900;
+  }
+  body main .entrenamiento .entrenamiento-tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  body main .entrenamiento .entrenamiento-tarjetas div {
+    width: 98%;
+    margin: 0px;
+    margin-bottom: 10px;
   }
   body main .nosotros {
     padding: 5px;
+  }
+  body main .nosotros h2 {
+    font-size: 30px;
+    font-weight: 900;
   }
   body main .nosotros .nosotros-imagenes div {
     text-align: center;
@@ -247,6 +314,20 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
   }
   .profe-flex div a img {
     width: 300px;
+  }
+}
+@media screen and (max-width: 310px) {
+  body main .entrenamiento .entrenamiento-tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  body main .entrenamiento .entrenamiento-tarjetas div {
+    width: 95%;
+    margin: 5px;
+    padding: 5px;
   }
 }
 /**CONOCENOS**/
@@ -397,7 +478,7 @@ main .sede-flex .sede {
   height: auto;
   margin: 5px;
   text-align: center;
-  border-radius: 25px;
+  border-radius: 10px;
   background: rgb(237, 237, 237);
   background: linear-gradient(90deg, rgb(237, 237, 237) 0%, rgb(240, 240, 240) 52%, rgb(237, 237, 237) 100%);
   margin-bottom: 50px;
@@ -519,48 +600,59 @@ main h4 {
 /**FIN ENTRENAMIENTO**/
 /**INDEX**/
 main .somos-rufit {
-  color: #FFFD00;
+  color: #F1F2F1;
   width: 100%;
   height: 500px;
   text-align: center;
-  background-image: url(../images/fondo-1.jpg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url(../images/textura.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
 }
-main .somos-rufit h2 {
+main .somos-rufit .somos-texto {
+  width: 45%;
+  padding: 0px 15px 0px 15px;
+  background-color: rgba(70, 181, 191, 0.6862745098);
+  border-radius: 10px;
+  margin-left: 5px;
+}
+main .somos-rufit .somos-texto h2 {
   font-size: 70px;
   font-weight: 900;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
-main .somos-rufit div {
+main .somos-rufit .somos-texto div {
   margin: 5px;
-  font-size: 20px;
-  background-color: rgba(70, 181, 191, 0.6862745098);
-  padding: 20px;
   color: #F1F2F1;
-  border-radius: 10px;
 }
-main .somos-rufit div p {
+main .somos-rufit .somos-texto div p {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
-  color: #F1F2F1;
+  font-size: 25px;
+  color: #185454;
 }
-main .somos-rufit .boton-amarillo {
+main .somos-rufit .somos-texto .boton-amarillo {
   background-color: #FFFD00;
   display: inline-block;
   padding: 20px;
   border-radius: 20px;
   color: #0D0E0E;
+}
+main .somos-rufit .somos-img {
+  width: 50%;
+}
+main .somos-rufit .somos-img img {
+  width: 80%;
+  height: auto;
 }
 main .entrenamiento {
   background-color: #0D0E0E;
@@ -712,19 +804,24 @@ main .contacto-form form div div textarea {
 /**FIN INDEX**/
 /**OBJETIVO**/
 main .objt {
-  background-image: url(../images/textura-objt-01.jpg);
+  background-color: #F1F2F1;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-main .objt p {
+main .objt .objt-text {
   font-size: 20px;
   color: #F1F2F1;
   padding: 0% 5% 0% 5%;
+  background-color: #46B4BF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 25px;
 }
 main .objt h3 {
   text-align: center;
-  color: #F1F2F1;
+  color: #46B4BF;
   padding: 0% 5% 0% 5%;
   text-align: center;
   font-family: "Poppins", sans-serif;

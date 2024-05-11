@@ -27,6 +27,23 @@
 @media screen and (max-width:1000px) {
   body {
     main {
+      .somos-rufit {
+        display: inline-block;
+        .somos-texto {
+          width: 100%;
+          margin-left: 0px;
+          border-radius: 0px;
+        }
+
+        .somos-img {
+          width: 100%;
+
+          img {
+            width: 25%;
+          }
+        }
+      }
+
       .entrenamiento {
         .entrenamiento-tarjetas {
           display: flex;
@@ -176,8 +193,49 @@
   }
 }
 
+@media screen and (max-width:510px) {
+  body {
+    main {
+      .somos-rufit {
+        height: 100%;
+        width: 100%;
+        background-color: #46B4BF;
+
+        .somos-texto {
+          h2 {
+            font-size: 50px;
+          }
+
+          div {
+            padding: 20px;
+
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @media screen and (max-width:500px) {
+  .entrenamiento {
+    .entrenamiento-tarjetas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      div {
+        width: 95%;
+        margin:5px;
+      }
+    }
+  }
+
   .distancia {
     width: 100%;
   }
@@ -289,40 +347,71 @@
     main {
       .somos-rufit {
         div {
-          width: 75%;
+          width: 100%;
         }
-      }
 
-      .nosotros {
-        padding: 5px;
+        .somos-texto {
+          h2 {
+            font-size: 50px;
+          }
 
-        .nosotros-imagenes {
           div {
-            text-align: center;
-            margin: 0px;
-            padding: 0px;
+            padding: 20px;
           }
         }
       }
+      .entrenamiento {
+        h2{
+          @include subtitulo(30px, 900);
+        }
+        .entrenamiento-tarjetas {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: space-between;
+    
+          div {
+            width: 98%;
+            margin: 0px;
+            margin-bottom:10px;
+          }
+        }
+      }
+        .nosotros {
+          padding: 5px;
+          h2{
+            @include subtitulo(30px, 900);
+          }
 
-      .tienda {
-        .tienda-grid {
-          .grid-item {
-            .venta {
-              padding-left: 10px;
+          .nosotros-imagenes {
+            div {
+              text-align: center;
+              margin: 0px;
+              padding: 0px;
+            }
+          }
+        }
 
-              h3 {
-                font-size: 15px;
-              }
+        .tienda {
+          .tienda-grid {
+            .grid-item {
+              .venta {
+                padding-left: 10px;
 
-              h4 {
-                margin-top: 5px;
-
-                a {
-                  margin-top: 3px;
+                h3 {
                   font-size: 15px;
-                  margin-bottom: 5px;
+                }
 
+                h4 {
+                  margin-top: 5px;
+
+                  a {
+                    margin-top: 3px;
+                    font-size: 15px;
+                    margin-bottom: 5px;
+
+                  }
                 }
               }
             }
@@ -331,36 +420,57 @@
       }
     }
   }
-}
 
 
 
-@media screen and (max-width:430px) {
-  .distancia {
-    width: 100%;
+  @media screen and (max-width:430px) {
+    .distancia {
+      width: 100%;
+    }
+
+    .mixto {
+      width: 100%;
+    }
   }
 
-  .mixto {
-    width: 100%;
-  }
-}
+  @media screen and (max-width:350px) {
+    .distancia {
+      width: 100%;
+    }
 
-@media screen and (max-width:350px) {
-  .distancia {
-    width: 100%;
-  }
+    .mixto {
+      width: 100%;
+    }
 
-  .mixto {
-    width: 100%;
-  }
-
-  .profe-flex {
-    div {
-      a {
-        img {
-          width: 300px
+    .profe-flex {
+      div {
+        a {
+          img {
+            width: 300px
+          }
         }
       }
     }
   }
-}
+
+  @media screen and (max-width:310px) {
+    body {
+      main {
+        .entrenamiento {
+          .entrenamiento-tarjetas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            div {
+              width: 95%;
+              margin: 5px;
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
