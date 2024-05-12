@@ -7,15 +7,25 @@
 }
 
 .boton-amarillo {
-    a {
-        text-decoration: none;
-        color: nth($paleta-colores, 3);
-        transition: 800ms;
-        font-size: 20px;
-        font-weight: 800;
-        &:hover {
-            color: nth($paleta-colores, 2);
+    background-color: map-get($boton-gd, bg-boton);
+    display: map-get($boton-gd, display-boton);
+    padding: map-get($boton-gd, pad-b);
+    border-radius: map-get($boton-gd, borde);
+    color: map-get($boton-gd, color-b);
+    font-family: "Poppins", sans-serif;
+    transition: 1s;
+        a {
+            text-decoration: none;
+            color: nth($paleta-colores, 3);
+            transition: 1s;
+            font-size: 20px;
+            font-weight: 800;
+            &:hover {
+                color: nth($paleta-colores, 5);
+            }
         }
+        &:hover {
+            background-color: map-get($boton-gd-hover, bg-boton);
     }
 }
 

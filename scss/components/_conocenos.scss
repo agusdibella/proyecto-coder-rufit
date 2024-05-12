@@ -22,7 +22,7 @@ main {
                 margin: 0px;
 
                 p {
-                    font-size: 20px;
+                    font-size: 23px;
                     font-weight: 400;
                 }
             }
@@ -94,7 +94,7 @@ main {
         height: auto;
         text-align: center;
         padding-bottom: 30px;
-        background-color: nth($paleta-colores, 5);
+        background-color: nth($paleta-colores, 6);
 
         h3 {
             font-size: 35px;
@@ -128,16 +128,21 @@ main {
                 align-content: center;
             }
         }
+        .video{
 
-        .boton-amarillo {
-            background-color: map-get($boton-gd, bg-boton);
-            display: map-get($boton-gd, display-boton);
-            padding: map-get($boton-gd, pad-b);
-            border-radius: map-get($boton-gd, borde);
-            color: map-get($boton-gd, color-b);
-            font-family: "Poppins", sans-serif;
+            h4{
+                @include subtitulo(35px, 900);
+                color: nth($paleta-colores, 4);
+                font-style: italic;
+            }
+            iframe{
+                border-radius: 10px;
+                width: 60%;
+                -webkit-box-shadow: 0px 0px 60px -19px rgba(241,242,241,1);
+                -moz-box-shadow: 0px 0px 60px -19px rgba(241,242,241,1);
+                box-shadow: 0px 0px 60px -19px rgba(241,242,241,1);
+            }
         }
-
     }
 
     .profe-ketbell {
@@ -152,6 +157,5 @@ main {
         }
     }
 }
-
 
 /**FIN CONOCENOS**/

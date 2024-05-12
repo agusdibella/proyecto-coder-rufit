@@ -38,6 +38,10 @@ $boton-gd:(
     color-b:nth($paleta-colores,3),
 );
 
+$boton-gd-hover:(
+    bg-boton:nth($paleta-colores,4),
+);
+
 
 @mixin subtitulo($sub-fsize, $sub-fweigh){
     font-size: $sub-fsize;

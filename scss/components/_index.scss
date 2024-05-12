@@ -21,7 +21,7 @@ main {
             background-color: #46b5bfaf;
             border-radius: 10px;
             margin-left: 5px;
-            h2 {
+            h1 {
                 font-size: 70px;
                 font-weight: 900;
                 font-family: "Poppins", sans-serif;
@@ -39,15 +39,10 @@ main {
                     color: nth($paleta-colores, 4);
                 }
             }
-            .boton-amarillo {
-                background-color: map-get($boton-gd, bg-boton);
-                display: map-get($boton-gd, display-boton);
-                padding: map-get($boton-gd, pad-b);
-                border-radius: map-get($boton-gd, borde);
-                color: map-get($boton-gd, color-b);
-
-            }
+            /*.boton-amarillo {
+           }*/
         }
+    }
 
         .somos-img {
             width: 50%;
@@ -88,6 +83,7 @@ main {
                     color: nth($paleta-colores, 5);
                     font-size: 30px;
                     font-weight: 800;
+                    font-family: "Poppins", sans-serif;
                 }
 
                 p {
@@ -95,16 +91,6 @@ main {
                     font-weight: 500;
                 }
 
-                .boton-amarillo {
-                    background-color: map-get($boton-gd, bg-boton);
-                    display: map-get($boton-gd, display-boton);
-                    padding: map-get($boton-gd, pad-b);
-                    border-radius: map-get($boton-gd, borde);
-                    color: map-get($boton-gd, color-b);
-                    font-family: "Poppins", sans-serif;
-
-
-                }
             }
         }
     }
@@ -241,6 +227,6 @@ main {
             }
         }
     }
-}
+
 
 /**FIN INDEX**/
