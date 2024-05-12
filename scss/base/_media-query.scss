@@ -2,6 +2,8 @@
   body {
     main {
       section {
+
+        /*conocenos*/
         .conocer-grid {
           margin: 5px 0px 5px 0px;
           padding: 0px 100px 30px 100px;
@@ -14,6 +16,8 @@
 @media screen and (max-width:1040px) {
   body {
     main {
+
+      /*obejtivos*/
       .objt {
         .cards-objetivos {
           margin-left: 5%;
@@ -27,6 +31,8 @@
 @media screen and (max-width:1000px) {
   body {
     main {
+
+      /*index*/
       .somos-rufit {
         display: inline-block;
 
@@ -66,6 +72,8 @@
 @media screen and (max-width:900px) {
   body {
     main {
+
+      /*tienda*/
       .tienda {
         .tienda-grid {
           width: 100%;
@@ -81,6 +89,8 @@
 @media screen and (max-width:900px) {
   body {
     main {
+
+      /*tienda*/
       .tienda {
         .tienda-grid {
           width: 100%;
@@ -94,6 +104,8 @@
 @media screen and (max-width:850px) {
   body {
     main {
+
+      /*obejtivo*/
       .edic-anteriores {
         .card-edic {
           display: flex;
@@ -117,15 +129,15 @@
   body {
     main {
       section {
+
+        /*conocenos*/
         .conocer-grid {
           display: inline-block;
         }
       }
 
       .profe {
-
         .profe-flex {
-
           text-align: center;
           flex-direction: column;
 
@@ -150,6 +162,8 @@
 @media screen and (max-width:590px) {
   body {
     main {
+
+      /*index*/
       .nosotros {
         padding: 5px;
       }
@@ -167,6 +181,8 @@
 @media screen and (max-width:560px) {
   body {
     main {
+
+      /*objetivo*/
       .objt {
         .cards-objetivos {
           margin-left: 5%;
@@ -191,6 +207,8 @@
   body {
     main {
       section {
+
+        /*conocenos*/
         .conocer-grid {
           margin: 5px 0px 5px 0px;
           padding: 5px 15px 30px 15px;
@@ -204,21 +222,38 @@
 @media screen and (max-width:530px) {
   body {
     main {
+
+      /*index*/
       .nosotros {
         padding: 5px;
       }
 
-      .nosotros-imagenes div {
-        text-align: center;
-        margin: 0px;
+      .nosotros-imagenes {
+        div {
+          text-align: center;
+          margin: 0px;
+        }
       }
     }
   }
+  .wassap {
+    a {
+        img {
+            width: 50px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    }
 }
+}
+
 
 @media screen and (max-width:510px) {
   body {
     main {
+
+      /*index*/
       .somos-rufit {
         height: 100%;
         width: 100%;
@@ -244,6 +279,8 @@
 
 
 @media screen and (max-width:500px) {
+
+  /*index*/
   .entrenamiento {
     .entrenamiento-tarjetas {
       display: flex;
@@ -259,6 +296,7 @@
     }
   }
 
+  /*entrenamiento*/
   .distancia {
     width: 100%;
   }
@@ -271,6 +309,8 @@
 @media screen and (max-width:470px) {
   body {
     main {
+
+      /*entrenamiento*/
       .entreno {
         .titulo {
           font-size: 30px;
@@ -302,6 +342,8 @@
 @media screen and (max-width:460px) {
   body {
     main {
+
+      /*entrenamiento*/
       .entreno {
         .titulo {
           font-size: 30px;
@@ -368,6 +410,8 @@
 @media screen and (max-width:400px) {
   body {
     main {
+
+      /*index*/
       .somos-rufit {
         div {
           width: 100%;
@@ -420,6 +464,7 @@
         }
       }
 
+      /*tienda*/
       .tienda {
         .tienda-grid {
           .grid-item {
@@ -445,16 +490,33 @@
         }
       }
 
+      /*conocenos*/
       .profe {
         .video {
           h4 {
             @include subtitulo(35px, 900);
             color: nth($paleta-colores, 4);
           }
+
           iframe {
             border-radius: 10px;
             width: 80%;
           }
+        }
+      }
+
+      /*objetivo*/
+      .objt {
+        .cards-objetivos {
+          margin-left: 0px;
+          margin-right: 0px;
+        }
+      }
+
+      .edic-anteriores {
+        .card-edic {
+          margin-left: 0px;
+          margin-right: 0px;
         }
       }
     }
@@ -465,6 +527,8 @@
 
 
 @media screen and (max-width:430px) {
+
+  /*entrenamiento*/
   .distancia {
     width: 100%;
   }
@@ -475,6 +539,8 @@
 }
 
 @media screen and (max-width:350px) {
+
+  /*entrenamiento*/
   .distancia {
     width: 100%;
   }
@@ -483,6 +549,7 @@
     width: 100%;
   }
 
+  /*conocenos*/
   .profe-flex {
     div {
       a {
@@ -497,6 +564,8 @@
 @media screen and (max-width:310px) {
   body {
     main {
+
+      /*entrenamiento*/
       .entrenamiento {
         .entrenamiento-tarjetas {
           display: flex;
@@ -512,12 +581,15 @@
           }
         }
       }
+
+      /*conocenos*/
       .profe {
         .video {
           h4 {
             @include subtitulo(35px, 900);
             color: nth($paleta-colores, 4);
           }
+
           iframe {
             border-radius: 10px;
             width: 95%;

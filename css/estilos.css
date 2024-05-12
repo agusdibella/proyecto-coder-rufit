@@ -55,18 +55,27 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
 }
 
 @media screen and (max-width: 1227px) {
+  body main section {
+    /*conocenos*/
+  }
   body main section .conocer-grid {
     margin: 5px 0px 5px 0px;
     padding: 0px 100px 30px 100px;
   }
 }
 @media screen and (max-width: 1040px) {
+  body main {
+    /*obejtivos*/
+  }
   body main .objt .cards-objetivos {
     margin-left: 5%;
     margin-right: 5%;
   }
 }
 @media screen and (max-width: 1000px) {
+  body main {
+    /*index*/
+  }
   body main .somos-rufit {
     display: inline-block;
   }
@@ -94,6 +103,9 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
   }
 }
 @media screen and (max-width: 900px) {
+  body main {
+    /*tienda*/
+  }
   body main .tienda .tienda-grid {
     width: 100%;
     display: grid;
@@ -101,12 +113,18 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
   }
 }
 @media screen and (max-width: 900px) {
+  body main {
+    /*tienda*/
+  }
   body main .tienda .tienda-grid {
     width: 100%;
     display: inline-block;
   }
 }
 @media screen and (max-width: 850px) {
+  body main {
+    /*obejtivo*/
+  }
   body main .edic-anteriores .card-edic {
     display: flex;
     width: 100%;
@@ -119,6 +137,9 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
   }
 }
 @media screen and (max-width: 760px) {
+  body main section {
+    /*conocenos*/
+  }
   body main section .conocer-grid {
     display: inline-block;
   }
@@ -135,6 +156,9 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
   }
 }
 @media screen and (max-width: 590px) {
+  body main {
+    /*index*/
+  }
   body main .nosotros {
     padding: 5px;
   }
@@ -144,6 +168,9 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
   }
 }
 @media screen and (max-width: 560px) {
+  body main {
+    /*objetivo*/
+  }
   body main .objt .cards-objetivos {
     margin-left: 5%;
     margin-right: 5%;
@@ -156,12 +183,18 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
   }
 }
 @media screen and (max-width: 558px) {
+  body main section {
+    /*conocenos*/
+  }
   body main section .conocer-grid {
     margin: 5px 0px 5px 0px;
     padding: 5px 15px 30px 15px;
   }
 }
 @media screen and (max-width: 530px) {
+  body main {
+    /*index*/
+  }
   body main .nosotros {
     padding: 5px;
   }
@@ -169,8 +202,17 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
     text-align: center;
     margin: 0px;
   }
+  .wassap a img {
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
 }
 @media screen and (max-width: 510px) {
+  body main {
+    /*index*/
+  }
   body main .somos-rufit {
     height: 100%;
     width: 100%;
@@ -187,6 +229,7 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
   }
 }
 @media screen and (max-width: 500px) {
+  /*index*/
   .entrenamiento .entrenamiento-tarjetas {
     display: flex;
     flex-direction: column;
@@ -198,6 +241,7 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
     width: 95%;
     margin: 5px;
   }
+  /*entrenamiento*/
   .distancia {
     width: 100%;
   }
@@ -206,6 +250,9 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
   }
 }
 @media screen and (max-width: 470px) {
+  body main {
+    /*entrenamiento*/
+  }
   body main .entreno .titulo {
     font-size: 30px;
   }
@@ -225,6 +272,9 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
   }
 }
 @media screen and (max-width: 460px) {
+  body main {
+    /*entrenamiento*/
+  }
   body main .entreno .titulo {
     font-size: 30px;
   }
@@ -269,6 +319,12 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
   }
 }
 @media screen and (max-width: 400px) {
+  body main {
+    /*index*/
+    /*tienda*/
+    /*conocenos*/
+    /*objetivo*/
+  }
   body main .somos-rufit div {
     width: 100%;
   }
@@ -329,8 +385,17 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
     border-radius: 10px;
     width: 80%;
   }
+  body main .objt .cards-objetivos {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  body main .edic-anteriores .card-edic {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 @media screen and (max-width: 430px) {
+  /*entrenamiento*/
   .distancia {
     width: 100%;
   }
@@ -339,17 +404,23 @@ main .tienda .titulo, main .titulo, main .entreno .titulo, main section .titulo 
   }
 }
 @media screen and (max-width: 350px) {
+  /*entrenamiento*/
   .distancia {
     width: 100%;
   }
   .mixto {
     width: 100%;
   }
+  /*conocenos*/
   .profe-flex div a img {
     width: 300px;
   }
 }
 @media screen and (max-width: 310px) {
+  body main {
+    /*entrenamiento*/
+    /*conocenos*/
+  }
   body main .entrenamiento .entrenamiento-tarjetas {
     display: flex;
     flex-direction: column;
