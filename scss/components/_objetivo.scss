@@ -96,13 +96,14 @@ main {
 
 
     .edic-anteriores {
-        background-color: nth($paleta-colores, 2);
+        background-color: nth($paleta-colores, 5);
         padding-bottom: 20px;
+        border-top: solid 2px nth($paleta-colores, 3 );
 
         h2 {
             @include subtitulo(35px, 900);
             padding: 10px 20px 10px 20px;
-            color: nth($paleta-colores, 5);
+            color: nth($paleta-colores, 4);
             font-family: "Poppins", sans-serif;
         }
 
@@ -131,6 +132,7 @@ main {
                     p {
                         font-size: 20px;
                         text-align: center;
+                        font-weight: 1000;
                     }
                 }
             }

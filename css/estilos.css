@@ -825,7 +825,7 @@ main .somos-img img {
 .nosotros .nosotros-imagenes h3 a {
   padding-top: 20px;
   font-family: "Poppins", sans-serif;
-  color: #46B4BF;
+  color: #0D0E0E;
   font-weight: 800;
   text-decoration: none;
   font-size: 30px;
@@ -979,14 +979,15 @@ main .objt .cards-objetivos .card .card-body h4 a:hover {
   background-color: #185454;
 }
 main .edic-anteriores {
-  background-color: #46B4BF;
+  background-color: #F1F2F1;
   padding-bottom: 20px;
+  border-top: solid 2px #0D0E0E;
 }
 main .edic-anteriores h2 {
   font-size: 35px;
   font-weight: 900;
   padding: 10px 20px 10px 20px;
-  color: #F1F2F1;
+  color: #185454;
   font-family: "Poppins", sans-serif;
 }
 main .edic-anteriores .card-edic {
@@ -1010,6 +1011,7 @@ main .edic-anteriores .card-edic .card .card-body h2 {
 main .edic-anteriores .card-edic .card .card-body p {
   font-size: 20px;
   text-align: center;
+  font-weight: 1000;
 }
 
 /**TIENDA**/
