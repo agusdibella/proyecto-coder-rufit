@@ -15,12 +15,14 @@ main {
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+
         .somos-texto {
             width: 45%;
             padding: 0px 15px 0px 15px;
             background-color: #46b5bfaf;
             border-radius: 10px;
             margin-left: 5px;
+
             h1 {
                 font-size: 70px;
                 font-weight: 900;
@@ -28,9 +30,11 @@ main {
                 font-weight: 900;
                 font-style: normal;
             }
+
             div {
                 margin: 5px;
                 color: nth($paleta-colores, 5);
+
                 p {
                     font-family: "Roboto", sans-serif;
                     font-weight: 700;
@@ -39,194 +43,202 @@ main {
                     color: nth($paleta-colores, 4);
                 }
             }
+
             /*.boton-amarillo {
            }*/
         }
     }
 
-        .somos-img {
-            width: 50%;
-            img {
-                width: 80%;
-                height: auto;
-            }
+    .somos-img {
+        width: 50%;
+
+        img {
+            width: 80%;
+            height: auto;
         }
     }
+}
 
-    .entrenamiento {
-        background-color: nth($paleta-colores, 3);
-        padding-bottom: 50px;
+.entrenamiento {
+    background-color: nth($paleta-colores, 3);
+    padding-bottom: 50px;
 
-        h2 {
-            @include subtitulo(35px, 900);
-            padding: 20px;
-            color: nth($paleta-colores, 5);
-            margin-bottom: 30px;
-            font-family: "Poppins", sans-serif;
-        }
-
-        .entrenamiento-tarjetas {
-            @extend %align-cards;
-
-            div {
-                font-family: "Roboto", sans-serif;
-                font-weight: 500;
-                display: inline-block;
-                text-align: center;
-                color: nth($paleta-colores, 5);
-                background-color: nth($paleta-colores, 2);
-                padding: 40px;
-                border-radius: 10px;
-                width: 25%;
-
-                h3 {
-                    color: nth($paleta-colores, 5);
-                    font-size: 30px;
-                    font-weight: 800;
-                    font-family: "Poppins", sans-serif;
-                }
-
-                p {
-                    color: nth($paleta-colores, 5);
-                    font-weight: 500;
-                }
-
-            }
-        }
+    h2 {
+        @include subtitulo(35px, 900);
+        padding: 20px;
+        color: nth($paleta-colores, 5);
+        margin-bottom: 30px;
+        font-family: "Poppins", sans-serif;
     }
 
+    .entrenamiento-tarjetas {
+        @extend %align-cards;
 
-    .nosotros {
-        background-color: nth($paleta-colores, 5);
-        padding: 40px 20px 40px 20px;
-        border-top: nth($paleta-colores, 5) 10px solid;
-        border-bottom: nth($paleta-colores, 5) 10px solid;
-
-        h2 {
-            @include subtitulo(35px, 900);
-            color: nth($paleta-colores, 2);
-            margin-bottom: 30px;
-            font-family: "Poppins", sans-serif;
-        }
-
-        .nosotros-imagenes {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-
-            div {
-                text-align: center;
-                margin: 0px 15px 0px 15px;
-
-                img {
-                    width: 300px;
-                    height: autos;
-                    border-radius: 10px;
-                    box-shadow: 0px 0px 36px 0px #0000002f;
-                    -webkit-box-shadow: 0px 0px 36px 0px #0000002f;
-                    -moz-box-shadow: 0px 0px 36px 0px #0000002f;
-
-                }
-            }
-
-            h3 {
-                a {
-                    padding-top: 20px;
-                    font-family: "Poppins", sans-serif;
-                    color: nth($paleta-colores, 2);
-                    font-weight: 800;
-                    text-decoration: none;
-                    font-size: 30px;
-                    transition: font-size, 80ms;
-
-                    &:hover {
-                        font-size: 33px;
-                    }
-                }
-            }
-        }
-    }
-
-
-    .marquesina {
-        background-color: nth($paleta-colores, 1);
-        text-align: center;
-
-        a {
-            font-family: "Poppins", sans-serif;
-            text-decoration: none;
-            color: nth($paleta-colores, 3);
-            font-weight: 800;
-            font-size: 20px;
-        }
-
-    }
-
-
-    .contacto-form {
-        background-color: nth($paleta-colores, 2);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        text-align: center;
-        height: auto;
-        width: 100%;
-
-        h2 {
-            padding-top: 10px;
-            font-size: 35px;
-            margin-bottom: 20px;
-            font-family: "Poppins", sans-serif;
-            font-weight: 900;
-        }
-
-        form {
-            font-size: 20px;
+        div {
             font-family: "Roboto", sans-serif;
             font-weight: 500;
-            text-align: left;
-            padding-bottom: 20px;
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            color: nth($paleta-colores, 4);
+            display: inline-block;
+            text-align: center;
+            background-color: nth($paleta-colores, 6);
+            padding: 40px;
+            border-radius: 10px;
+            width: 25%;
+            box-shadow: 15px 15px 30px #ffffff28,
+                -15px -15px 30px #ffffff28;
+            transition: 800ms;
 
-            div {
-                padding: 5px;
+            &:hover{
+            transform: scale(1.05);}
 
-                div {
-                    padding-bottom: 10px;
 
-                    label {
-                        padding-bottom: 5px;
-                        align-content: flex-start;
-                    }
-
-                    input {
-                        width: 100%;
-                        padding: 12px 20px;
-                        border: 2px solid #ccc;
-                        border-radius: 5px;
-                    }
-                }
+            h3 {
+                color: nth($paleta-colores, 2);
+                font-size: 30px;
+                font-weight: 800;
+                font-family: "Poppins", sans-serif;
             }
 
-            div {
-                div {
-                    textarea {
-                        width: 100%;
-                        height: 150px;
-                        padding: 12px 20px;
-                        border: 2px solid #ccc;
-                        border-radius: 4px;
-                        background-color: ($paleta-colores, 5);
-                        border-radius: 5px;
-                    }
+            p {
+                color: nth($paleta-colores, 4);
+                font-weight: 500;
+            }
+
+        }
+    }
+}
+
+
+.nosotros {
+    background-color: nth($paleta-colores, 5);
+    padding: 40px 20px 40px 20px;
+    border-top: nth($paleta-colores, 5) 10px solid;
+    border-bottom: nth($paleta-colores, 5) 10px solid;
+
+    h2 {
+        @include subtitulo(35px, 900);
+        color: nth($paleta-colores, 2);
+        margin-bottom: 30px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .nosotros-imagenes {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        div {
+            text-align: center;
+            margin: 0px 15px 0px 15px;
+
+            img {
+                width: 300px;
+                height: autos;
+                border-radius: 10px;
+                box-shadow: 0px 0px 36px 0px #0000002f;
+                -webkit-box-shadow: 0px 0px 36px 0px #0000002f;
+                -moz-box-shadow: 0px 0px 36px 0px #0000002f;
+
+            }
+        }
+
+        h3 {
+            a {
+                padding-top: 20px;
+                font-family: "Poppins", sans-serif;
+                color: nth($paleta-colores, 2);
+                font-weight: 800;
+                text-decoration: none;
+                font-size: 30px;
+                transition: font-size, 800ms;
+
+                &:hover {
+                    font-size: 33px;
                 }
             }
         }
     }
+}
+
+
+.marquesina {
+    background-color: nth($paleta-colores, 1);
+    text-align: center;
+
+    a {
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        color: nth($paleta-colores, 3);
+        font-weight: 800;
+        font-size: 20px;
+    }
+
+}
+
+
+.contacto-form {
+    background-color: nth($paleta-colores, 2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: auto;
+    width: 100%;
+
+    h2 {
+        padding-top: 10px;
+        font-size: 35px;
+        margin-bottom: 20px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+    }
+
+    form {
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        text-align: left;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        color: nth($paleta-colores, 4);
+
+        div {
+            padding: 5px;
+
+            div {
+                padding-bottom: 10px;
+
+                label {
+                    padding-bottom: 5px;
+                    align-content: flex-start;
+                }
+
+                input {
+                    width: 100%;
+                    padding: 12px 20px;
+                    border: 2px solid #ccc;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        div {
+            div {
+                textarea {
+                    width: 100%;
+                    height: 150px;
+                    padding: 12px 20px;
+                    border: 2px solid #ccc;
+                    border-radius: 4px;
+                    background-color: ($paleta-colores, 5);
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
 
 
 /**FIN INDEX**/

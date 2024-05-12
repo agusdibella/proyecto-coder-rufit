@@ -10,6 +10,7 @@ main {
             padding: 10px 20px 10px 20px;
             color: nth($paleta-colores, 4);
             font-family: "Poppins", sans-serif;
+
             img {
                 width: 25px;
                 transition: 50ms;
@@ -33,14 +34,21 @@ main {
 
     .sede-flex {
         @extend%align-cards;
+
         .sede {
             height: auto;
             margin: 5px;
             text-align: center;
-            border-radius: 10px;
-            background: rgb(237, 237, 237);
-            background: linear-gradient(90deg, rgba(237, 237, 237, 1) 0%, rgba(240, 240, 240, 1) 52%, rgba(237, 237, 237, 1) 100%);
             margin-bottom: 50px;
+            border-radius: 10px;
+            background: nth($paleta-colores, 6);
+            box-shadow: 15px 15px 30px #dddddd,
+                -15px -15px 30px #ffffff;
+            transition: 800ms;
+
+            &:hover {
+                transform: scale(1.05);
+            }
 
             h3 {
                 font-size: 30px;
